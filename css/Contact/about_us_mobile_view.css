@@ -1,0 +1,40 @@
+@media screen and (max-width: 480px) {
+    .about_us_team {
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+        width: 100%;
+    }
+
+    .about_us_team img {
+        width: 350px;
+        float: none;
+        padding: 0%;
+        margin: 5%;
+    }
+
+    .about_us_team p {
+        padding: 7%;
+        text-align: justify;
+        margin: 0%;
+    }
+
+    .about_img_container .about_container_box .about_img{
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .about_img_container .about_container_box .about_img img {
+        width: 130px;
+    }
+
+    .about_img_container .about_container_box .about_img h2{
+        font-size: 15px;
+    }
+
+    .about_img_container .about_container_box .about_img p{
+        font-size: 13px;
+    }
+
+
+}
