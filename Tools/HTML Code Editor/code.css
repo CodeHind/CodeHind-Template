@@ -1,1 +1,74 @@
+  
+  
+  .btn {
+    position:fixed;
+    right:0;
+    padding: 0.4rem;
+    width: 4rem;
+    margin-top: -60px;
+    background: #6739B7;
+    color: white;
+    font-size: 1rem;
+    outline:none;
+    cursor:pointer;
+     height:90vh;
+     border: none;
+  }
+  .btn:hover{
+     color:white;
+     background: #53299c;
+  }
+  
+  
+  .main-editor {
+    background: #F1E9FF;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    position:fixed;
+    height:100vh;
+     justify-content: center;
+      align-items: center;
+    
+  }
 
+  .main-editor  .first code{
+    font-size: 20px;
+  }
+  
+
+  .first {
+    background-color: white;
+    color: black;
+    width: 45%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: pre;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+    padding: 2rem;
+    height: 90vh;
+    border-radius: 12px 0px 0px 12px;
+    border-right: 1px solid black;
+    
+  }
+  
+
+  .second {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 35%;
+    overflow-y: auto;
+    white-space: pre;
+    padding: 2rem;
+    right: 0;
+    margin-top: -50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.4rem;
+    height: 90vh;
+    border-radius: 0px 12px 12px 0px;
+  }
+
+  iframe{
+    border: none;
+  }
