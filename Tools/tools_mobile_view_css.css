@@ -1,0 +1,117 @@
+@media screen and (max-width: 480px) {
+
+    .slider{
+        padding: 0%;
+        margin: 0%;
+        text-align: center;
+    }
+    .slider .slider_text .slider_text_tools_h1{ 
+        line-height: 45px; 
+        font-size: 30px;
+        margin: 0% 1%;                        
+    }
+
+    .slider .slider_text button {
+        visibility: hidden;
+    }
+
+    /* -------------------our tools----------------- */
+    .ourtoolstext h1{
+        font-size: 30px;
+        padding: 30px 0px 30px 0px;
+    }
+
+
+    /* ---------------------Online Code Editor CSS------------------------- */
+    .tools_online_code_editor_box {
+        height: max-content;
+        padding-bottom: 10%;
+        margin: 0%;
+        width: 100%;
+    }
+
+    .tools_online_code_editor_box .tools-editor .tools_editor_img_logo {
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 7%;
+    }
+
+    .tools_online_code_editor_box .tools-code-editor {
+        text-align: center;
+        margin-left: 0%;
+    }
+
+
+    /* --------------------------Online Color Picker---------------------------- */
+    .tools_online_code_color_box {
+        position: relative;
+        height: 740px;
+        margin: 0%;
+        padding: 0%;
+
+    }
+
+    .tools_online_code_color_box:hover {
+        background-color: #7b0dbb;        
+    } 
+
+    .tools_online_code_color_box .tools-code-color {
+        text-align: center;
+        margin: 0%;
+    }
+
+    .tools_online_code_color_box .tools-code-color input{
+        margin-top: 30px;
+        padding: 10px 40px;
+        border-radius: 10px;
+    }
+    
+    .tools_online_code_color_box .tools-color .tools_color_image {
+        margin-right: 25px;
+    }
+
+    /* -----------------Tools wave Genretor CSS Mobile View-------------------------- */
+    .tools_online_wave_box {
+        height: max-content;
+        margin: 0%;
+        padding: 0%;
+        padding-bottom: 10%;
+    }
+
+    .tools_online_wave_box .tools-wave .tools_wave_image {
+        width: 300px;
+        padding: 12%;
+        margin: 0%;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .tools_online_wave_box .tools_wave_text{
+        text-align: center;
+        margin: 0%;
+    }
+
+
+    /* -------------------tOOLS eLEMNTS cODE fOR wEBSITE---------------------------------- */
+    .tools_elements_coding_website_css_box{
+        height: 700px;
+        position: relative;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .tools_elements_coding_website_css_box .tools-element-image .tools_element_image_online_code {
+        width: 350px;
+        margin-right: 20px;
+    }
+
+    .tools_elements_coding_website_css_box .tools-element-code{
+        text-align: center;
+        margin: 0%;      
+    }
+
+
+    .footerpowerdby p{
+        font-size: 13px;
+    }
+}
