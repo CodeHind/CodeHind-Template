@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../../images/CodeHind_Logos/CodeHind_favicon.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="../../css/Home/style.css">
+    <link rel="stylesheet" href="../../css/Tutorial/tutorial.css">
+    <link rel="stylesheet" href="../../css/Home/mobile_view_style.css">
+    <link rel="stylesheet" href="../../css/Tutorial/tutorial_mobile_view.css">
+    <!-- <link rel="stylesheet" href="css/xy.css"> -->
+    <title>This is Home page</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="../../index.html"><img src="../../images/CodeHind_Logos/CodeHind_Header_logo.png" alt="logo"
+                    width="100px"></a>
+        </div>
+        <!-- mobile View -->
+        <div class="nav nav-set-home nav-mobile-view" id="mySidenav">
+            <div class="list-btn-menu-cancel-mobile-view ">
+                <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            </div>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Course.html"
+                        style="background-color: #4e0296; padding: 5px; color: white; border-radius: 50px; padding: 3px 10px;">Courses</a>
+                </li>
+                <li><a href="../../tools.html">Tools</a></li>
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../materials.html">Meterials</a></li>
+                <div class="search-box">
+                    <button class="btn-search"><i class="bi bi-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                </div>
+            </ul>
+        </div>
+        <div class="list-btn-menu-mobile-view">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- JS MENU BAR -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </div>
+
+    <div class="main-menu">
+        <ul>
+            <a href="../Python/1_Python_Intro.html">
+                <li style="background-color: #4e1ca3;">Python</li>
+            </a>
+            <a href="#">
+                <li>HTML</li>
+            </a>
+            <a href="#">
+                <li>CSS</li>
+            </a>
+
+            <a href="../../Tools/HTML Code Editor/code_editor.html" class="code_editor">
+                <li>Code Editor</li>
+            </a>
+
+
+        </ul>
+    </div>
+
+    <div class="big-container">
+
+        <div class="side-bar">
+            <ul>
+                <p style="color: white; font-size: 24px; font-weight: bold;">&nbsp; Python Tutorial</p>
+                <a href="1_Python_Intro.html">
+                    <li>Python Intro</li>
+                </a>
+
+                <a href="2_Python_Get_Started.html">
+                    <li>Get Started</li>
+                </a>
+
+                <a href="3_Python_Setup.html">
+                    <li>Python Syntax</li>
+                </a>
+
+                <a href="4_python_comment.html">
+                    <li style="background-color: #4e1ca3;">Python Comment</li>
+                </a>
+
+                <a href="5_python_variable.html">
+                    <li>Python Variable</li>
+                </a>
+
+                <a href="6_python_data_type.html">
+                    <li>Python Data Type</li>
+                </a>
+                
+                <a href="7_type_conversion.html">
+                    <li>Type Conversion</li>
+                </a>
+
+                <a href="8_input_and_output.html">
+                    <li>Python Input & Output</li>
+                </a>
+
+                <a href="9_python_operators.html">
+                    <li>Python Operators</li>
+                </a>
+            </ul>
+
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <h1>Python Comment</h1>
+            </div>
+            <br>
+
+            <div class="para">
+                <img src="image/python_comment.png" alt="Python Introduction By CodeHind Image" class="para_image_python_intro">
+
+
+                <h2>Comment</h2>
+
+                <p>Comments in Python are the lines in the code that are ignored by the interpreter during the execution
+                    of the program. Comments enhance the readability of the code and help the programmers to understand
+                    the code very carefully. There are three types of comments in Python –
+                </p>
+                <ul>
+                    <li>Single Line Comment</li>
+                    <li>Multi-Line Comment</li>
+                </ul>
+
+                <br><br>
+
+                <h2>Example: Comment In Python</h2>
+
+                <br>
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                        #Python Program to Understand Comments <br>
+                        name="CodeHind" <br>
+                        print(name) <br> <br>
+                        
+                        ======================================= <br> <br>
+                        
+                        Output: <br>
+                        CodeHind                        
+                </code>
+                </div>
+
+                <p>In the above example, it can be seen that comments are ignored by the interpreter during the
+                    execution of the program.</p>
+
+                <br>
+                <h2>Why We Use Comments ?</h2>
+
+                <p>Comments are generally used for the following purposes: </p>
+
+                <ul>
+                    <li>Code Readability</li>
+                    <li>Explanation of the code or Metadata of the project</li>
+                    <li>Prevent execution of code</li>
+                    <li>To Include Resources</li>
+                </ul> <br> <br>
+
+
+                <h2>Types of Comments in Python ?</h2>
+
+                <p>There are Two main kinds of comments in Python.</p>
+
+                <h3>Single-Line Comments</h3>
+
+                <p>Python single-line comment starts with the hashtag symbol (#) with no white spaces and lasts till the
+                    end of the line. If the comment exceeds one line then put a hashtag on the next line and continue
+                    the comment. Python’s single-line comments are proved useful for supplying short explanations for
+                    variables, function declarations, and expressions. See the following code snippet demonstrating
+                    single line comment:</p>
+
+                <h2>Example : </h2>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                        #Print “CodeHind” to Console <br>
+                        print(“CodeHind”) <br> <br>
+                        ===================================== <br> <br>
+                        Output : <br>
+                        CodeHind
+                                          
+                </code>
+                </div>
+
+
+<br>
+                <h3>Multi- Line Comments : </h3>
+                <p>Python does not provide the option for multiline Comments. However, there are different ways through
+                    which we can write multiline comments.</p>
+
+<br>
+                <h3>Using Multiple Hashtags (#)</h3>
+                <p>We can multiple hashtags (#) to write multiline comments in Python. Each and every line will be
+                    considered as a single-line comment.</p>
+
+<br>
+                <h3>Example: Multiline comments using multiple hashtags (#)</h3>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                        # Python program to demonstrate <br>
+                        # multiline comments <br>
+                        print("Multiline comments") <br>  <br>
+                        
+                        ======================================= <br> <br>
+                        Output : <br>
+                        Multiline comments                     
+                </code>
+                </div>
+<br> <br>
+                <h3>Using String Literals</h3>
+                <p>Python ignores the string literals that are not assigned to a variable so we can use these string
+                    literals as a comment. </p>
+
+                <h3>Example 1 : </h3>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                        <br>
+                        'This will be ignored by Python'    <br> <br>
+                                     
+                </code>
+                </div>
+
+                <p>On executing the above code we can see that there will not be any output so we use the strings with
+                    triple quotes(“””) as multiline comments.</p>
+<br>
+                <h3>Example 2: Multiline comments using string literals</h3>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                        """ Python program to demonstrate <br>
+                            multiline comments""" <br>
+                            print("Multiline comments") <br> <br>
+
+                            ======================================== <br> <br>
+                            Output : <br>
+
+                            Multiline comments
+           
+                </code>
+                </div>
+ <br><br>
+                <h2>Python Docstring ?</h2>
+
+                <p>Python Docstring is the string literals with triple quotes that are appeared right after the function. It is used to associate documentation that has been written with Python modules, functions, classes, and methods. It is added right below the functions, modules, or classes to describe what they do. In Python, the docstring is then made available via the __doc__ attribute.</p>
+
+                <h3>Example :</h3>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                        def multiply(a, b): <br>
+                        """Multiplies the value of a and b""" <br>
+                        return a*b <br> <br>
+                        
+                        
+                        # Print the docstring of multiply function <br>
+                        print(multiply.__doc__) <br> <br>
+
+                        ==================================== <br> <br>
+                        Output : <br>
+                        Multiplies the value of a and b
+
+                </code>
+                </div>
+<br><br>
+                <h2>How to Write Better Comments ?</h2>
+                <ul>
+                    <li>Use comments to describe what a function does and not the specific details on how the function does it.</li>
+
+                    <li>Try to remove as many redundant comments as possible. Try writing code that can explain itself, using better function/variable name choice.</li>
+
+                    <li>Try to make the comments as short and concise as possible.</li>
+                </ul> <br> <br> <br> 
+
+            </div>
+
+        </div>
+
+        <div class="advertisement">
+            <p>Advertisement</p>
+            <img src="../../images/Advertisement/Code_With_Shani Programming Logic Building Ebook.png"
+                alt="Collab Post">
+            <br>
+            <img src="../../images/Advertisement/Make_Professional_website.png" alt="Collab Post">
+            <br><img src="../../images/Advertisement/Learn_web_development.png" alt="Collab Post">
+        </div>
+    </div>
+
+
+
+    <div class="fixboxup">
+        <a href="tutorial.html"><i class="bi bi-arrow-up"></i></a>
+    </div>
+</body>
+
+</html>

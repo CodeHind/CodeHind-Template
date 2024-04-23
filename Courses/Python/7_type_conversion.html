@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../../images/CodeHind_Logos/CodeHind_favicon.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="../../css/Home/style.css">
+    <link rel="stylesheet" href="../../css/Tutorial/tutorial.css">
+    <link rel="stylesheet" href="../../css/Tutorial/tutorial_mobile_view.css">
+    <link rel="stylesheet" href="../../css/Home/mobile_view_style.css">
+    <!-- <link rel="stylesheet" href="css/xy.css"> -->
+    <title>This is Home page</title>
+
+    <style>
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #6739B7;
+            color: white;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="../../index.html"><img src="../../images/CodeHind_Logos/CodeHind_Header_logo.png" alt="logo"
+                    width="100px"></a>
+        </div>
+        <!-- mobile View -->
+        <div class="nav nav-set-home nav-mobile-view" id="mySidenav">
+            <div class="list-btn-menu-cancel-mobile-view ">
+                <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            </div>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Course.html"
+                        style="background-color: #4e0296; padding: 5px; color: white; border-radius: 50px; padding: 3px 10px;">Courses</a>
+                </li>
+                <li><a href="../../tools.html">Tools</a></li>
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../materials.html">Meterials</a></li>
+                <div class="search-box">
+                    <button class="btn-search"><i class="bi bi-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                </div>
+            </ul>
+        </div>
+        <div class="list-btn-menu-mobile-view">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- JS MENU BAR -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </div>
+
+    <div class="main-menu">
+        <ul>
+            <a href="../Python/1_Python_Intro.html">
+                <li style="background-color: #4e1ca3;">Python</li>
+            </a>
+            <a href="#">
+                <li>HTML</li>
+            </a>
+            <a href="#">
+                <li>CSS</li>
+            </a>
+
+            <a href="../../Tools/HTML Code Editor/code_editor.html" class="code_editor">
+                <li>Code Editor</li>
+            </a>
+
+
+        </ul>
+    </div>
+
+    <div class="big-container">
+
+        <div class="side-bar">
+            <ul>
+                <p style="color: white; font-size: 24px; font-weight: bold;">&nbsp; Python Tutorial</p>
+                <a href="1_Python_Intro.html">
+                    <li>Python Intro</li>
+                </a>
+
+                <a href="2_Python_Get_Started.html">
+                    <li>Get Started</li>
+                </a>
+
+                <a href="3_Python_Setup.html">
+                    <li>Python Syntax</li>
+                </a>
+
+                <a href="4_python_comment.html">
+                    <li>Python Comment</li>
+                </a>
+
+                <a href="5_python_variable.html">
+                    <li>Python Variable</li>
+                </a>
+
+                <a href="6_python_data_type.html">
+                    <li>Python Data Type</li>
+                </a>
+
+                <a href="7_type_conversion.html">
+                    <li style="background-color: #4e1ca3;">Type Conversion</li>
+                </a>
+
+                <a href="8_input_and_output.html">
+                    <li>Python Input & Output</li>
+                </a>
+
+                <a href="9_python_operators.html">
+                    <li>Python Operators</li>
+                </a>
+            </ul>
+
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <h1>Python Type Conversion</h1>
+            </div>
+            <br>
+
+            <div class="para">
+                <img src="image/type_conversion.png" alt="Python Introduction By CodeHind Image"
+                    class="para_image_python_intro">
+
+                <br> <br>
+                <h2>Type Conversion</h2>
+
+                <p>The process of converting the value of one data type (integer, string, float, etc.) to another data
+                    type is called type conversion. Python has two types of type conversion.</p>
+
+                <ol>
+                    <li>Implicit Type Conversion</li>
+                    <li>Explicit Type Conversion</li>
+                </ol>
+
+                <br>
+
+                <h2>Implicit Type Conversion</h2>
+
+                <p>In Implicit type conversion, Python automatically converts one data type to another data type. This
+                    process doesn't need any user involvement.</p>
+
+                <p>Let's see an example where Python promotes the conversion of the lower data type (integer) to the
+                    higher data type (float) to avoid data loss.</p>
+
+
+                <br>
+
+                <h2>Example 1: Converting integer to float</h2>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+        num_int = 123 <br>
+num_flo = 1.23 <br> <br>
+
+num_new = num_int + num_flo <br> <br>
+
+print("datatype of num_int:",type(num_int)) <br>
+print("datatype of num_flo:",type(num_flo)) <br> <br>
+
+print("Value of num_new:",num_new) <br>
+print("datatype of num_new:",type(num_new)) <br>
+
+                              
+</code>
+                </div>
+
+
+                <br>
+
+                <p>When we run the above program, the output will be:</p>
+
+                <br>
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+        datatype of num_int: <class 'int'> <br>
+            datatype of num_flo: <class 'float'> <br> <br>
+            
+            Value of num_new: 124.23 <br>
+            datatype of num_new: <class 'float'> <br>
+            
+
+                              
+</code>
+                </div>
+
+                <br>
+
+                <p>In the above program,</p>
+                <ul>
+                    <li>We add two variables num_int and num_flo, storing the value in num_new.</li>
+                    <li>We will look at the data type of all three objects respectively.</li>
+                    <li>In the output, we can see the data type of num_int is an integer while the data type of num_flo
+                        is a float.</li>
+                    <li>Also, we can see the num_new has a float data type because Python always converts smaller data
+                        types to larger data types to avoid the loss of data.</li>
+
+                </ul>
+
+                <br>
+                <p>Now, let's try adding a string and an integer, and see how Python deals with it.</p>
+
+                <br><br>
+
+                <h2>Example 2: Addition of string(higher) data type and integer(lower) datatype</h2>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+        num_int = 123 <br>
+num_str = "456" <br> <br>
+
+print("Data type of num_int:",type(num_int)) <br>
+print("Data type of num_str:",type(num_str)) <br> <br>
+
+print(num_int+num_str) <br>
+
+                              
+</code>
+                </div>
+
+
+                <br>
+
+                <p>When we run the above program, the output will be:</p>
+
+                <br>
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+        Data type of num_int: <class 'int'>  <br>
+            Data type of num_str: <class 'str'>  <br> <br>
+            
+            Traceback (most recent call last): <br>
+              File "python", line 7, in <module>  <br>
+            TypeError: unsupported operand type(s) for +: 'int' and 'str' <br>
+            
+            
+
+                              
+</code>
+                </div>
+
+                <br>
+
+                <p>In the above program,</p>
+                <ul>
+                    <li>We add two variables num_int and num_str.</li>
+                    <li>As we can see from the output, we got TypeError. Python is not able to use Implicit Conversion
+                        in such conditions.</li>
+                    <li>However, Python has a solution for these types of situations which is known as Explicit
+                        Conversion.</li>
+                </ul>
+
+                <br>
+                <br>
+
+                <h2>Explicit Type Conversion</h2>
+                <p>In Explicit Type Conversion, users convert the data type of an object to required data type. We use
+                    the predefined functions like int(), float(), str(), etc to perform explicit type conversion.</p>
+
+                <p>This type of conversion is also called typecasting because the user casts (changes) the data type of
+                    the objects.</p>
+
+                <h3>Syntax :</h3>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+      <br>  <required_datatype>(expression) <br>
+                                    
+</code>
+                </div>
+
+                <br>
+                <p>Typecasting can be done by assigning the required data type function to the expression.</p>
+
+                <br>
+
+                <h2>Example 3: Addition of string and integer using explicit conversion</h2>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+        num_int = 123 <br>
+        num_str = "456" <br> <br>
+        
+        print("Data type of num_int:",type(num_int)) <br>
+        print("Data type of num_str before Type Casting:",type(num_str)) <br> <br>
+        
+        num_str = int(num_str) <br>
+        print("Data type of num_str after Type Casting:",type(num_str)) <br><br>
+        
+        num_sum = num_int + num_str <br>
+        print("Sum of num_int and num_str:",num_sum) <br>
+        print("Data type of the sum:",type(num_sum)) <br>
+        
+                            
+</code>
+                </div>
+
+
+                <br>
+
+                <p>When we run the above program, the output will be:</p>
+
+                <br>
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+        Data type of num_int: <class 'int'> <br>
+            Data type of num_str before Type Casting: <class 'str'> <br> <br>
+            
+            Data type of num_str after Type Casting: <class 'int'><br> <br>
+            
+            Sum of num_int and num_str: 579 <br>
+            Data type of the sum: <class 'int'> <br>
+            
+            
+
+                              
+</code>
+                </div>
+
+                <br>
+
+                <p>In the above program,</p>
+                <ul>
+                    <li>We add num_str and num_int variable.</li>
+                    <li>We converted num_str from string(higher) to integer(lower) type using int() function to perform
+                        the addition.</li>
+                    <li>After converting num_str to an integer value, Python is able to add these two variables.</li>
+                    <li>We got the num_sum value and data type to be an integer.</li>
+
+                </ul>
+
+                <br><br><br> <br> <br>
+
+            </div>
+
+        </div>
+
+        <div class="advertisement">
+            <p>Advertisement</p>
+            <img src="../../images/Advertisement/Code_With_Shani Programming Logic Building Ebook.png"
+                alt="Collab Post">
+            <br>
+            <img src="../../images/Advertisement/Make_Professional_website.png" alt="Collab Post">
+            <br><img src="../../images/Advertisement/Learn_web_development.png" alt="Collab Post">
+        </div>
+    </div>
+
+
+
+    <div class="fixboxup">
+        <a href="tutorial.html"><i class="bi bi-arrow-up"></i></a>
+    </div>
+</body>
+
+</html>

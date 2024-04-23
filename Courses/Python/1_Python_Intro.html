@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="shortcut icon" href="../../images/CodeHind_Logos/CodeHind_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/Home/style.css">
+    <link rel="stylesheet" href="../../css/Home/mobile_view_style.css">
+    <link rel="stylesheet" href="../../css/Tutorial/tutorial.css">
+    <link rel="stylesheet" href="../../css/Tutorial/tutorial_mobile_view.css">
+    <title>CodeHind</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="../../index.html"><img src="../../images/CodeHind_Logos/CodeHind_Header_logo.png" alt="logo" width="100px"></a>
+        </div>
+        <!-- mobile View -->
+        <div class="nav nav-set-home nav-mobile-view" id="mySidenav">
+            <div class="list-btn-menu-cancel-mobile-view ">
+                <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            </div>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Course.html" style="background-color: #4e0296; padding: 5px; color: white; border-radius: 50px; padding: 3px 10px;">Courses</a></li>
+                <li><a href="../../tools.html">Tools</a></li>
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../materials.html">Meterials</a></li>
+                <div class="search-box">
+                    <button class="btn-search"><i class="bi bi-search"></i></button>
+                    <input type="text" id="myInput" onkeyup="myFunction()" class="input-search"
+                        placeholder="Type to Search...">
+                </div>
+            </ul>
+        </div>
+        <div class="list-btn-menu-mobile-view">
+            <span style="font-size:30px; cursor:pointer;" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- JS MENU BAR -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </div>
+
+    <div class="main-menu">
+        <ul>
+            <a href="../Python/1_Python_Intro.html">
+                <li style="background-color: #4e1ca3;">Python</li>
+            </a>
+            <a href="#">
+                <li>HTML</li>
+            </a>
+            <a href="#">
+                <li>CSS</li>
+            </a>
+
+            <a href="../../Tools/HTML Code Editor/code_editor.html" class="code_editor">
+                <li>Code Editor</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="big-container">
+        <div class="side-bar">
+            <ul>
+                <p style="color: white; font-size: 24px; font-weight: bold;">&nbsp; Python Tutorial</p>
+                <a href="1_Python_Intro.html">
+                    <li style="background-color: #4e1ca3;">Python Intro</li>
+                </a>
+
+                <a href="2_Python_Get_Started.html">
+                    <li> Get Started</li>
+                </a>
+
+                <a href="3_Python_Setup.html">
+                    <li>Python Syntax</li>
+                </a>
+                
+                <a href="4_python_comment.html">
+                    <li>Python Comment</li>
+                </a>
+                
+                <a href="5_python_variable.html">
+                    <li>Python Variable</li>
+                </a>
+
+                <a href="6_python_data_type.html">
+                    <li>Python Data Type</li>
+                </a>
+                
+                <a href="7_type_conversion.html">
+                    <li>Type Conversion</li>
+                </a>
+
+                <a href="8_input_and_output.html">
+                    <li>Python Input & Output</li>
+                </a>
+
+                <a href="9_python_operators.html">
+                    <li>Python Operators</li>
+                </a>
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <h1> Python Introduction </h1>
+            </div>
+            <br>
+
+            <div class="para">
+                <img src="image/Python_Intro_Thumbnail.png" alt="Python Introduction By CodeHind Image" class="para_image_python_intro">
+                <h2> Python Programming </h2>
+
+                <p>If you are interested in games, gui, desktop applications, artificial intelligence, machine learning,
+                    data scientist, etc. If you want to do all these things in single programming language, then you
+                    can do these works in python. But with any other language you cannot do all these things at
+                    once. </p>
+
+
+                <p>In today's time computer is being used the most and every new student is liking computer and
+                    they want to become hacker or software engineer or programmer in their life. </p>
+
+
+                <p>Python is an open source interpreted high-level general-purpose programming language, and
+                    object-oriented programming is also available in Python, although the Python language provides
+                    clear, logical code and clear syntax for programmers for small and large-scale projects.
+                </p>
+
+
+                <p>Python was launched by Guido Van Rossem in the year 1991 and today Python is the number 1
+                    programming language.</p>
+
+                <img src="image/Guido-Van-Rossum.png" alt="Founder of Python Programming Image" class="para_image_python_intro">
+
+
+                <p>Python is a popular programming language with which you can do many things and it is in great
+                    demand in the market right now.</p>
+
+                <p>That's why you should learn Python programming, I will give some examples of what you can do
+                    in Python.
+                </p>
+
+                <p>Artificial Intelligence, Machine Learning , Data Scientist , Data Analysis , GUI , Games , Desktop
+                    Application , Mobile Apps, Back-end Development etc..</p>
+                <br>
+                <h2> Is Python easy?</h2>
+                <p>Friends, Python is a very easy programming language that means you can learn this
+                    programming language in just 3 months or less than 3 Months
+                </p>
+                <br>
+                <h2> Does Python have scope in the market?</h2>
+                <p>Friends, the scope of Python is currently highest in the market, if you become an expert in
+                    Python at this time, then according to me you are doing very well because at this time and the
+                    time to come, only Python is going to be there and There are too many jobs in Python in market
+                    and Now a Days, There are not So Many Python developer
+                </p>
+            </div>
+        </div>
+        <div class="advertisement">
+            <p>Advertisement</p>
+            <img src="../../images/Advertisement/Code_With_Shani Programming Logic Building Ebook.png" alt="Collab Post">
+            <br><img src="../../images/Advertisement/Learn_web_development.png" alt="Collab Post">
+            <br><img src="../../images/Advertisement/Make_Professional_website.png" alt="Collab Post">
+        </div>
+    </div>
+
+
+
+    <div class="fixboxup">
+        <a href="tutorial.html"><i class="bi bi-arrow-up"></i></a>
+    </div>
+</body>
+
+</html>

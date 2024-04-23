@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../../images/CodeHind_Logos/CodeHind_favicon.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="../../css/Home/style.css">
+    <link rel="stylesheet" href="../../css/Tutorial/tutorial.css">
+    <link rel="stylesheet" href="../../css/Home/mobile_view_style.css">
+    <link rel="stylesheet" href="../../css/Tutorial/tutorial_mobile_view.css">
+    <title>This is Home page</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="../../index.html"><img src="../../images/CodeHind_Logos/CodeHind_Header_logo.png" alt="logo"
+                    width="100px"></a>
+        </div>
+        <!-- mobile View -->
+        <div class="nav nav-set-home nav-mobile-view" id="mySidenav">
+            <div class="list-btn-menu-cancel-mobile-view ">
+                <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            </div>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Course.html"
+                        style="background-color: #4e0296; padding: 5px; color: white; border-radius: 50px; padding: 3px 10px;">Courses</a>
+                </li>
+                <li><a href="../../tools.html">Tools</a></li>
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../materials.html">Meterials</a></li>
+                <div class="search-box">
+                    <button class="btn-search"><i class="bi bi-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                </div>
+            </ul>
+        </div>
+        <div class="list-btn-menu-mobile-view">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- JS MENU BAR -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </div>
+
+    <div class="main-menu">
+        <ul>
+            <a href="../Python/1_Python_Intro.html">
+                <li style="background-color: #4e1ca3;">Python</li>
+            </a>
+            <a href="#">
+                <li>HTML</li>
+            </a>
+            <a href="#">
+                <li>CSS</li>
+            </a>
+
+            <a href="../../Tools/HTML Code Editor/code_editor.html" class="code_editor">
+                <li>Code Editor</li>
+            </a>
+
+
+        </ul>
+    </div>
+
+    <div class="big-container">
+
+        <div class="side-bar">
+            <ul>
+                <p style="color: white; font-size: 24px; font-weight: bold;">&nbsp; Python Tutorial</p>
+                <a href="1_Python_Intro.html">
+                    <li>Python Intro</li>
+                </a>
+
+                <a href="2_Python_Get_Started.html">
+                    <li>Get Started</li>
+                </a>
+
+                <a href="3_Python_Setup.html">
+                    <li style="background-color: #4e1ca3;">Python Syntax</li>
+                </a>
+                
+                
+                <a href="4_python_comment.html">
+                    <li>Python Comment</li>
+                </a>
+                
+                <a href="5_python_variable.html">
+                    <li>Python Variable</li>
+                </a>
+
+                <a href="6_python_data_type.html">
+                    <li>Python Data Type</li>
+                </a>
+                
+                <a href="7_type_conversion.html">
+                    <li>Type Conversion</li>
+                </a>
+
+                <a href="8_input_and_output.html">
+                    <li>Python Input & Output</li>
+                </a>
+
+                <a href="9_python_operators.html">
+                    <li>Python Operators</li>
+                </a>
+            </ul>
+
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <h1>Python Syntax</h1>
+            </div>
+            <br>
+
+            <div class="para">
+                <img src="image/Python_Syntax.png" alt="Python Introduction By CodeHind Image" class="image_get_start">
+
+
+                <h2>Statement</h2>
+
+                <p>The instructions written in the source code for execution are called statements. There
+                    are different types of statements in the Python programming language such as
+                    assignment statements, conditional statements, looping statements, etc. All these help
+                    the user to get the required output. For example, n = 50 is an assignment statement.
+                </p>
+
+                <br><br>
+                <h2>Multi-Line Statement </h2>
+
+                <p>Statements in Python can be extended to one or more
+                    lines by using parenthesis (), braces {}, square brackets [], semi-colon (;), continuous
+                    character slash (\). When the programmer needs to do long calculations and cannot fit
+                    his statements in one line, one can use these characters.
+                </p>
+
+                <br>
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                    Declared using Continuation Character (\): <br>
+s = 1 + 2 + 3 + \ <br>
+4 + 5 + 6 + \ <br> 
+7 + 8 + 9 <br> <br>
+Declared using parentheses () : <br>
+n = (1 * 2 * 3 + 7 + 8 + 9) <br> <br>
+Declared using square brackets [] : <br>
+footballer = ['MESSI', <br>
+'NEYMAR', <br>
+'SUAREZ'] <br> <br>
+Declared using braces {} : <br>
+x = {1 + 2 + 3 + 4 + 5 + 6 + <br>
+7 + 8 + 9} <b></b>
+Declared using semicolons(;) : <br>
+flag = 2; ropes = 3; pole = 4
+                </code>
+                </div>
+
+                <br>
+                <h2>Whitespace and Indentation</h2>
+
+                <p>If you've been working in other programming languages such as Java, C#, or C/C++,
+                    you may know that these languages use semicolons (;) to separate statements. <br>
+                    However, Python uses whitespace and indentation to build the code structure.
+                    The following shows a snippet of Python code:</p> <br>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="font-size:16px; color: white;">
+                        # define main function to print out something <br>
+def main(): <br>
+i = 1 <br>
+max = 10 <br>
+while (i < max): <br>
+
+print(i) <br>
+i = i + 1 <br>
+# call function main <br>
+main()
+
+                    </code>
+                </div>
+
+
+
+                <p>It is not important for you to understand the meaning of the code right now. Please focus
+                    on the code structure instead. <br> <br>
+                    At the end of each line, you don't see a semicolon (;) to end the statement. and uses
+                    code indentation to format the code. <br> <br>
+                    By using indentation and whitespace to organize code, Python code gains the following
+                    benefits:
+                </p>
+
+                <ul>
+                    <li>First, you will never miss the start or end code of a block like in other
+                        programming languages such as Java or C#.</li>
+                    <br>
+
+                    <li>Second, the coding style is essentially the same. If you have to maintain another
+                        developer's code, that code will look very similar to yours.
+                    </li>
+                    <br>
+
+                    <li>Third, the code is more readable and clear as compared to other programming
+                        languages.</li>
+                </ul>
+
+                <h2>Python Comments</h2>
+
+                <p>Comments are just as important as code because they describe why a piece of code
+                    was written. <br><br>
+                    When Python executes interpreter code, it ignores comments. <br> <br>
+                    In Python, a single line comment begins with the hash (#) symbol and is followed by the
+                    comment. <br> <br>
+                    # This is a single line comment in Python
+                </p>
+                <br>
+                <h2>Python Identifiers</h2>
+
+                <p>Identifiers are names that identify variables, functions, modules, classes, and other
+                    objects in Python. <br> <br>
+                    Name identifiers must be a letter or an underscore (_). The following characters can be
+                    alphanumeric or underscore. <br> <br>
+                    Python identifiers are case-sensitive. For example, counter and counter are different
+                    identifiers. <br> <br>
+                    Also, you cannot use Python keywords for naming identifiers.
+
+                </p>
+
+                <br>
+                <h2>Python Keywords</h2>
+
+                <p>Some words have special meanings in Python. They are called keywords.
+                    The following is a list of keywords in Python:
+                    <br> <br>
+                    False class finally is return <br>
+                    None continue for lambda try <br>
+                    True def from nonlocal while <br>
+                    and del global not with <br>
+                    as elif if or yield <br>
+                    assert else import pass <br>
+                    break except in raise
+
+                    <br><br> <br>
+                    Python is a growing and evolving language. So its keywords will keep growing and
+                    changing. <br><br>
+                    Python provides a special module for listing its keywords called keywords. <br> <br>
+                    To find the current keyword list, you can use the following code: <br><br>
+                    import keyword <br>
+                    print(keyword.kwlist)
+
+                </p>
+
+                <br>
+                <h2>String Literals</h2>
+                <p>Python uses single quotes ('), double quotes ("), triple-single quotes (''') and
+                    triple-double quotes (""") to represent string literals. <br> <br>
+
+                    String literals need to be sourced with the same type of quotes. For example, if you use
+                    single quotes to start a string literal, you need to use the same single quotes to end it. <br> <br>
+                    The following are some examples of string literals: <br> <br>
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="font-size:16px; color:white">
+                    s = 'This is a string' <br>
+                    print(s) <br>
+                    s = "Another string using double quotes" <br>
+                    print(s) <br>
+                    s = ''' string can span <br>
+                    multiple line ''' <br>
+                    print(s)</p> </code>
+                </div>
+            </div>
+        </div>
+
+        <div class="advertisement">
+            <p>Advertisement</p>
+            <img src="../../images/Advertisement/Code_With_Shani Programming Logic Building Ebook.png" alt="Collab Post">
+            <br><img src="../../images/Advertisement/Learn_web_development.png" alt="Collab Post">
+            <br><img src="../../images/Advertisement/Make_Professional_website.png" alt="Collab Post">
+        </div>
+    </div>
+
+    <div class="fixboxup">
+        <a href="tutorial.html"><i class="bi bi-arrow-up"></i></a>
+    </div>
+</body>
+
+</html>

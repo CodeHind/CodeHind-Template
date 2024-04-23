@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../../images/CodeHind_Logos/CodeHind_favicon.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="../../css/Home/style.css">
+    <link rel="stylesheet" href="../../css/Tutorial/tutorial.css">
+    <link rel="stylesheet" href="../../css/Tutorial/tutorial_mobile_view.css">
+    <link rel="stylesheet" href="../../css/Home/mobile_view_style.css">
+    <!-- <link rel="stylesheet" href="css/xy.css"> -->
+    <title>This is Home page</title>
+
+    <style>
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #6739B7;
+            color: white;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="../../index.html"><img src="../../images/CodeHind_Logos/CodeHind_Header_logo.png" alt="logo"
+                    width="100px"></a>
+        </div>
+        <!-- mobile View -->
+        <div class="nav nav-set-home nav-mobile-view" id="mySidenav">
+            <div class="list-btn-menu-cancel-mobile-view ">
+                <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            </div>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Course.html"
+                        style="background-color: #4e0296; padding: 5px; color: white; border-radius: 50px; padding: 3px 10px;">Courses</a>
+                </li>
+                <li><a href="../../tools.html">Tools</a></li>
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../materials.html">Meterials</a></li>
+                <div class="search-box">
+                    <button class="btn-search"><i class="bi bi-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                </div>
+            </ul>
+        </div>
+        <div class="list-btn-menu-mobile-view">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- JS MENU BAR -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </div>
+
+    <div class="main-menu">
+        <ul>
+            <a href="../Python/1_Python_Intro.html">
+                <li style="background-color: #4e1ca3;">Python</li>
+            </a>
+            <a href="#">
+                <li>HTML</li>
+            </a>
+            <a href="#">
+                <li>CSS</li>
+            </a>
+
+            <a href="../../Tools/HTML Code Editor/code_editor.html" class="code_editor">
+                <li>Code Editor</li>
+            </a>
+
+
+        </ul>
+    </div>
+
+    <div class="big-container">
+
+        <div class="side-bar">
+            <ul>
+                <p style="color: white; font-size: 24px; font-weight: bold;">&nbsp; Python Tutorial</p>
+                <a href="1_Python_Intro.html">
+                    <li>Python Intro</li>
+                </a>
+
+                <a href="2_Python_Get_Started.html">
+                    <li>Get Started</li>
+                </a>
+
+                <a href="3_Python_Setup.html">
+                    <li>Python Syntax</li>
+                </a>
+
+                <a href="4_python_comment.html">
+                    <li>Python Comment</li>
+                </a>
+
+                <a href="5_python_variable.html">
+                    <li>Python Variable</li>
+                </a>
+
+                <a href="6_python_data_type.html">
+                    <li>Python Data Type</li>
+                </a>
+
+                <a href="7_type_conversion.html">
+                    <li>Type Conversion</li>
+                </a>
+
+                <a href="8_input_and_output.html">
+                    <li style="background-color: #4e1ca3;">Python Input & Output</li>
+                </a>
+
+                <a href="9_python_operators.html">
+                    <li>Python Operators</li>
+                </a>
+
+
+            </ul>
+
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <h1>Python Input & Output</h1>
+            </div>
+            <br>
+
+            <div class="para">
+                <img src="image/input_and_output.png" alt="Python Introduction By CodeHind Image"
+                    class="para_image_python_intro">
+
+                <br> <br>
+                <h2>Input & Output in Python</h2>
+
+                <p>In this article, we will see different ways in which first we can take input from users and second
+                    show output to them.</p>
+
+                <br> <br>
+                <h2>How to Take Input From User in Python</h2>
+                <p>Sometimes a developer might want to take user input at some point in the program. To do this Python
+                    provides an input() function.</p>
+
+                <br>
+                <h3>Syntax :</h3>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                       <br> input('Message') <br> <br>
+                              
+</code>
+                </div>
+                <br>
+                <p>where Message is an optional string that is displayed on the string at the time of taking input.</p>
+
+
+                <br><br>
+                <h2>Example 1: Python get user input with a message</h2>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                        # Taking input from the user <br>
+                        name = input("Enter your name: ") <br> <br>
+                        
+                        # Output <br>
+                        print("Hello, " + name) <br>
+                        print(type(name)) <br>
+                        
+                              
+</code>
+                </div>
+
+                <br>
+                <h3>Output:</h3>
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                       <br> Enter your name: CodeHind <br>
+                        Hello, CodeHind <br>
+                        <class 'str'> <br>              
+</code>
+                </div>
+
+                <br>
+                <br>
+                <p><strong>Note:</strong>Python takes all the input as a string input by default. To convert it to any
+                    other data type we have to convert the input explicitly. For example, to convert the input to int or
+                    float we have to use the int() and float() method respectively.</p>
+
+                <br><br><br>
+                <h2>Example 2: Integer input in Python</h2>
+
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                        # Taking input from the user as integer <br>
+                        num = int(input("Enter a number: ")) <br> <br>
+                        
+                        sum = num + 1 <br> <br>
+                        
+                        # Output <br>
+                        print(sum) <br>
+                        
+                        
+                              
+</code>
+                </div>
+
+                <br>
+                <h3>Output:</h3>
+                <div style="background-color: rgb(29, 29, 29); padding: 10px; border-radius: 10px;">
+                    <code style="color: white; font-size: 16px;">
+                        Enter a number: 29 <br>
+                        30 <br>
+                                    
+</code>
+                </div>
+
+                <br><br><br> <br> <br>
+
+            </div>
+
+        </div>
+
+        <div class="advertisement">
+            <p>Advertisement</p>
+            <img src="../../images/Advertisement/Code_With_Shani Programming Logic Building Ebook.png"
+                alt="Collab Post">
+            <br>
+            <img src="../../images/Advertisement/Make_Professional_website.png" alt="Collab Post">
+            <br><img src="../../images/Advertisement/Learn_web_development.png" alt="Collab Post">
+        </div>
+    </div>
+
+
+
+    <div class="fixboxup">
+        <a href="tutorial.html"><i class="bi bi-arrow-up"></i></a>
+    </div>
+</body>
+
+</html>
