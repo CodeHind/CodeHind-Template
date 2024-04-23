@@ -1,1 +1,59 @@
+.slider_text_materials_h1{
+    padding-top: 10px;
+    line-height: 55px; 
+    font-size: 55px; 
+    margin-top: 50px;
+}
 
+.backgroundimgslider {
+    width: 280px;
+}
+
+.free-paid-materiales {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.free-paid-materiales p {
+    display: inline;
+    text-align: center;
+    font-size: larger;
+    border-right: 1px solid black;
+}
+
+.free-paid-materiales p a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.freecontentbook-box {
+    text-align: center;
+    margin: 50px 120px;
+    border-top: 1px solid #726a6a;
+    width: 80%;
+    border: none;
+}
+
+
+.freecontentbook-box .freecontentimgbox {
+    float: left;
+    padding: 15px;
+    height: fit-content;
+}
+
+.freecontentimgbox .freecontentimga {
+    width: 170px;
+    padding: 30px;
+    margin-left: 10px;
+    background-color: #f1e9ff;
+    border-radius: 10px;
+}
+
+.freecontentbook-box .freecontenttextbox {
+    margin-bottom: -30px;
+    padding: 5px;
+    padding-left: 280px;
+    text-align: left;
+}

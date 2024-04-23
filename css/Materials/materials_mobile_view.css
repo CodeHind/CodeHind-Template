@@ -1,0 +1,79 @@
+@media screen and (max-width: 480px) {
+
+    .slider{
+        padding: 0%;
+        margin: 0%;
+        width: 100%;
+    }
+
+    .slider_text_materials_h1{
+        font-size: 30px;
+        line-height: 50px;
+        margin: 10% 0% 0% 5%;
+    }
+
+    .slider .slider_text p{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .slider .backgrounimghome {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .slider .backgrounimghome .backgroundimgslider {
+        width: auto;
+        margin: 0%;
+        padding: 16%;    
+    }
+    
+    .course-search-bar{
+        visibility: hidden;
+    }
+
+    .freecontentbook-box{
+        width: 100%;
+        margin: 0%;
+        padding: 0% 0% 10% 0%;
+        border-bottom: 1px solid black;        
+    }
+
+    .freecontentbook-box .freecontentimgbox{
+        height: fit-content;
+        padding-bottom: 80px;
+    }
+
+    .freecontentbook-box .freecontentimgbox .freecontentimga{
+        width: 100px;
+        padding: 15px;
+    }
+
+    .freecontentbook-box .freecontenttextbox{
+        padding: 10px;
+        margin: 0%;
+        text-align: left;
+        font-size: 18px;
+        line-height: 25px;
+        position: relative;
+    }
+
+    .freecontentbook-box .freecontenttextbox p{
+        margin-top: -15px;
+    }
+
+
+    .freecontentbook-box .freecontenttextbox a button{
+        margin-top: 0px;
+        position: relative;
+        display: inline-block;
+        margin-left: 45%;
+    }
+ 
+    .baatcodingkihome{
+        padding-top: 0%;
+        width: 200px;
+        margin-top: 0%;
+    }
+}
