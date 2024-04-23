@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description"
+        content="CodeHind is a E-Learning platform for all Students who wants to learn Computer Programming. Our Mission is to Provide Best Programming Education to All Programming Students with Simple and Easy Language. We Have Uploaded Some Programming Languages Course like Python, HTML, CSS, Javascript, PHP, C Language, C++, Ruby, Java and Other Programming Language.">
+
+
+    <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+
+    <meta property="og:title" content="CodeHind An E-Learning Platform for All Programmers">
+
+    <meta property="og:description" content="CodeHind offers free online tutorials, Materials, Coding Tools, Projects, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+
+    <meta name="author" content="CodeHind, Shani Kumar, Sumit Kumar">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+
+    <link rel="shortcut icon" href="images/CodeHind_Logos/CodeHind_favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/Home/style.css">
+
+    <link rel="stylesheet" href="css/Home/mobile_view_style.css">
+
+    <link rel="stylesheet" href="css/Contact/contact.css">
+    <!-- <link rel="stylesheet" href="css/xy.css"> -->
+
+    <link rel="stylesheet" href="css/Contact/contact_mobile_view_style.css">
+    <title>CodeHind | Home</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/CodeHind_Logos/CodeHind_Header_logo.png" alt="logo" width="100px"></a>
+        </div>
+        <!-- mobile View -->
+        <div class="nav nav-set-home nav-mobile-view" id="mySidenav">
+            <div class="list-btn-menu-cancel-mobile-view ">
+                <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            </div>
+            <ul>
+                <li><a href="index.html" style="background-color: #4e0296; padding: 5px; color: white; border-radius: 50px; padding: 3px 10px;">Home</a></li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="materials.html">Meterials</a></li>
+                <div class="search-box">
+                    <button class="btn-search"><i class="bi bi-search"></i></button>
+                    <input type="text" id="myInput" onkeyup="myFunction()" class="input-search" placeholder="Type to Search...">
+
+                    <ul id="myUL" class="search_function_home">
+                        <li><a href="Courses/Python/1_Python_Intro.html">Python</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">C Language</a></li>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="Projects/Python/1_mad_lib.html.html">Calculator</a></li>
+                        <li><a href="Tools/HTML Code Editor/code_editor.html">Code Editor</a></li>
+                        <li><a href="materials.html">programming Logic Buildig Ebook</a></li>
+                        <li><a href="materials.html">Books</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="list-btn-menu-mobile-view">
+            <span style="font-size:30px; cursor:pointer;" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- JS MENU BAR -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </div>
+
+    <!-- Javascript_code_search_bar -->
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+
+    <div class="contact-form">
+        <h3>Connect With Us</h3>
+        <form action="https://formspree.io/f/mwkzrywg" method="post" target="_blank">
+            <input type="text" placeholder="Name" name="name"> <br>
+            <input type="email" placeholder="Email" name="email"> <br>
+            <input type="tel" placeholder="Phone Number" name="phone no."> <br>
+            <textarea name="message" id="message" cols="80" rows="10" placeholder="Message"></textarea>
+            <button id="btn" class="input_submit_button"> Submit </button>
+        </form>
+    </div>
+
+    <!-- Js Connect With Us -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click',function(e){
+            e.preventDefult()
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var pno = document.getElementById('pno').value;
+            var message = document.getElementById('message').value;
+
+            var body = 'name: ' +name + '<br/> email: ' + email + '<br/> Phone No: ' + pno + '<br/> Message' + message;
+
+            
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "sumitkumarsa9212@gmail.com",
+                Password : "hzfobkwivwyaoyeo",
+                To : 'sumitkumarsa9212@gmail.com',
+                From : email,
+                Subject : message,
+                Body : body
+            }).then(
+            message => alert(message)
+            );
+        })
+        
+    </script>
+  
+
+    <br><br><br><br><br>
+    <div class="baatcodingkihome">
+        <p>#Baat Coding Ki</p>
+    </div>
+
+
+    <!-- footer- -->
+    <footer>
+        <br><br>
+        <div class="homefooter">
+            <div class="footerimglogo">
+                <img src="images/CodeHind_Logos/CodeHind_Footer_Logo.png" alt="Logo" height="60px">
+            </div>
+            <div class="inputsubscribe">
+                <form action="https://formspree.io/f/mwkzrywg" method="post">
+                    <input type="email" name="Email" placeholder="Email Enter" class="inputsubscribeemail">
+                    <input type="submit" name="Subscribe" value="Subscribe" class="inputsubscribesubmit">
+                </form>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/codehind/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/people/CodeHind/100086582449717/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCgQS0PMpqfoPLzVDK7_-Naw" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-twitter" target="_blank"></i></a>
+                <a href="t.me/codehind"><i class="bi bi-telegram" target="_blank"></i></a>
+
+            </div>
+        </div>
+        <div class="contect_about_home_page">
+            <ol>
+                <li><a href="about_us.html"> About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ol>
+        </div>
+        <div class="manubarfooter_big">
+            <div class="manubarfooter">
+                <ul>
+                    <li style="color: white; font-weight: bold;">Manu</li>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="Course.html">
+                        <li>Courses</li>
+                    </a>
+                    <a href="tools.html">
+                        <li>Tools</li>
+                    </a>
+                    <a href="projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a href="materials.html">
+                        <li>Materials</li>
+                    </a><br>
+                </ul>
+            </div>
+            <div class="manubarfooter">
+                <ul>
+                    <li style="color: white; font-weight: bold;">Tutorials</li>
+                    <a href="Courses/Python/1_Python_Intro.html">
+                        <li>Python</li>
+                    </a>
+
+                    <a href="">
+                        <li>HTML</li>
+                    </a>
+
+                    <a href="">
+                        <li>CSS</li>
+                    </a>
+
+                    <a href="">
+                        <li>JavaScript</li>
+                    </a>
+
+                    <a href="">
+                        <li>C Language</li>
+                    </a>
+
+                    <a href="">
+                        <li>C++</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="manubarfooter">
+                <ul>
+                    <li style="color: white; font-weight: bold;">Company</li>
+                    <a href="about_us.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="Contact.html">
+                        <li>Contact Us</li>
+                    </a>
+                    <br><br><br><br>
+                    <br><br>
+                </ul>
+            </div>
+        </div>
+
+        <p style=" width: 92%; text-align: center; background-color: white; height: 1px; margin-left: 4%;"></p>
+        <div class="footerpowerdby">
+            <p>
+                &#169; 2022 Copyrights All Right Reserved Website Design By CodeHind</p>
+        </div>
+
+    </footer>
+    <a href="index.html">
+        <div class="fixboxup">
+            <i class="bi bi-arrow-up"></i>
+        </div>
+    </a>
+</body>
+
+</html>

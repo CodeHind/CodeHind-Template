@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Description" content="CodeHind is a E-Learning platform for all Students who wants to learn Computer Programming. Our Mission is to Provide Best Programming Education to All Programming Students with Simple and Easy Language. We Have Uploaded Some Programming Languages Course like Python, HTML, CSS, Javascript, PHP, C Language, C++, Ruby, Java and Other Programming Language.">
+
+    
+    <meta name="Keywords" content="Online Code Editor, Waves Shapes Generator, Website Elements, Color Picker, Code Editor, Online Color Picker, Online Wave Shapes Generator, Wave Shapes Generator For Website">
+
+    <meta property="og:title" content="CodeHind An E-Learning Platform for All Programmers">
+
+    <meta property="og:description" content="CodeHind offers free online tutorials, Materials, Coding Tools, Projects, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+
+    <meta name="author" content="CodeHind, Shani Kumar, Sumit Kumar">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="images/CodeHind_Logos/CodeHind_favicon.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="css/Home/style.css">
+    <link rel="stylesheet" href="css/Tools/tools_style.css">
+    <link rel="stylesheet" href="css/Home/mobile_view_style.css">
+    <link rel="stylesheet" href="css/Courses/course_style.css">
+    <!-- Mobile View CSS -->
+    <link rel="stylesheet" href="css/Courses/courses_mobile_view_css.css">
+    <!-- Tools Botton -->
+    <link rel="stylesheet" href="css/Tools/tools_mobile_view_css.css">
+    <title>CodeHind | Tools</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/CodeHind_Logos/CodeHind_Header_logo.png" alt="logo" width="100px"></a>
+        </div>
+        <!-- mobile View -->
+        <div class="nav nav-set-home nav-mobile-view" id="mySidenav">
+            <div class="list-btn-menu-cancel-mobile-view ">
+                <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="tools.html"
+                        style="background-color: #4e0296; padding: 5px; color: white; border-radius: 50px; padding: 3px 10px;">Tools</a>
+                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="materials.html">Meterials</a></li>
+                <div class="search-box">
+                    <button class="btn-search"><i class="bi bi-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                </div>
+            </ul>
+        </div>
+        <div class="list-btn-menu-mobile-view">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- JS MENU BAR -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </div>
+    <section>
+        <div class="slider">
+            <div class="slider_text">
+                <h1 class="slider_text_tools_h1">We Created <br> Coding Tools For Best <br> Programming Environment</h1>
+                <p style="font-size: 20px; line-height: 25px; margin-top: -20px; margin-bottom: 55px;">The Best Tool we have Added, that is Code Editor. <br> So You can easily Write Code Online With Your Phone</p>
+                    <p style="font-size: 25px; font-style: normal; font-weight: bolder; margin-top: -30px; color: #6739b7;">#Baat Coding Ki</p>        
+                <div class="baatcodingki">
+                    <p style="color: #4e0296; font-size: 20px;">#Baat Coding Ki</p>
+                </div>
+            </div>
+
+            <div class="course-search-bar-mobile">
+                <input type="search" placeholder="Search Courses"><a href="#"><i class="bi bi-search"></i></a>
+            </div>
+
+            <div class="backgrounimghome">
+                <img src="images/tools_page_images/image-tool-slider.png" alt="img" width="400px">
+            </div>
+        </div>
+    </section>
+    <!-- <div class="course-search-bar">
+        <input type="search" placeholder="Search Tools"><a href="#"><i class="bi bi-search"></i></a>
+    </div> -->
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+
+    <div class="ourtoolstext">
+        <h1>Our Tools</h1>
+    </div>
+
+    <div class="tools_online_code_editor_box reveal">
+        <div class="tools-editor">
+            <img src="images/tools_page_images/image-code-editor.png" alt="Editor image" class="tools_editor_img_logo">
+        </div>
+        <div class="tools-code-editor">
+            <p style="font-size: 50px; font-weight: bold; line-height: 50px;">Online Code <br> Editor </p>
+            <p style="font-size: 20px;  font-weight: bold; font-style: italic; margin-top: -25px; line-height: 25px;">Now You can just Write Code and Run It With Your Mobile Phone,<br> You did Not Need tyo Install Any Other <br>Application for Code Editor</p>
+            <a href="Tools/HTML Code Editor/code_editor.html"><button>Try Now</button></a>
+        </div>
+    </div>
+
+
+    <div class="tools_online_code_color_box reveal">
+        <div class="tools-code-color">
+            <p  style="font-size: 50px; font-weight: bold; line-height: 50px;">Online Color <br> Picker </p>
+            <p style="font-size: 20px;  font-weight: bold; font-style: italic; margin-top: -25px; line-height: 25px;">From Our Color Picker Tool <br> You can Just pick Any Color  And Use it<br> For Your Website and for Any Design you want</p>
+                <button disabled="disabled">Try Now</button>
+        </div>
+        <div class="tools-color">
+            <img src="images/tools_page_images/image-color-picker.png" alt="editer-image" class="tools_color_image">
+        </div>
+    </div>
+
+    <div class="tools_online_wave_box reveal">
+        <div class="tools-wave">
+            <img src="images/tools_page_images/image-wave-generator.png" alt="editer-image" class="tools_wave_image">
+        </div>
+        <div class="tools_wave_text">
+            <p  style="font-size: 50px; font-weight: bold; line-height: 50px;">Online Wave Shapes <br> Generator</h2>
+            <p  style="font-size: 20px;  font-weight: bold; font-style: italic; margin-top: -25px; line-height: 25px;">From This Wave Generator Tool <br>You can Easily Generate Waves for Your Website for <br>Any Other Design</p>
+            <button disabled="disabled">Try Now</button>
+        </div>
+    </div>
+
+    <div class="tools_elements_coding_website_css_box reveal">
+        <div class="tools-element-code">
+            <p style="font-size: 50px; font-weight: bold; line-height: 50px;">Elements Code <br> For Website </h2>
+            <p style="font-size: 20px;  font-weight: bold; font-style: italic; margin-top: -25px; line-height: 25px;">In this Tool, We Have Given <br>Many Built in Elements to Build Your Professional Webiste. <br>You can Just Copy the Code and you can Use it </p>
+            <button disabled="disabled">Try Now</button>
+        </div>
+        <div class="tools-element-image">
+            <img src="images/tools_page_images/website-design-elementor.png" alt="editer-image"
+                class="tools_element_image_online_code">
+        </div>
+    </div><br><br>
+    <div class="baatcodingkihome baatcodingkicourses baatcodingkitools">
+        <p>#Baat Coding Ki</p>
+    </div>
+
+
+    <!-- footer- -->
+    <footer>
+        <br><br>
+        <div class="homefooter">
+            <div class="footerimglogo">
+                <img src="images/CodeHind_Logos/CodeHind_Footer_Logo.png" alt="Logo" height="60px">
+            </div>
+            <div class="inputsubscribe">
+                <form action="https://formspree.io/f/mwkzrywg" method="post" target="_blank">
+                    <input type="email" name="Email" placeholder="Email Enter" class="inputsubscribeemail">
+                    <input type="submit" name="Subscribe" value="Subscribe" class="inputsubscribesubmit">
+                </form>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/codehind/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/people/CodeHind/100086582449717/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCgQS0PMpqfoPLzVDK7_-Naw" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="t.me/codehind" target="_blank"><i class="bi bi-telegram"></i></a>
+            </div>
+        </div>
+        <div class="contect_about_home_page">
+            <ol>
+                <li><a href="about_us.html"> About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ol>
+        </div>
+        <div class="manubarfooter_big">
+            <div class="manubarfooter">
+                <ul>
+                    <li style="color: white; font-weight: bold;">Manu</li>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="Course.html">
+                        <li>Courses</li>
+                    </a>
+                    <a href="tools.html">
+                        <li>Tools</li>
+                    </a>
+                    <a href="projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a href="materials.html">
+                        <li>Materials</li>
+                    </a><br>
+                </ul>
+            </div>
+            <div class="manubarfooter">
+                <ul>
+                    <li style="color: white; font-weight: bold;">Tutorials</li>
+                    <a href="#">
+                        <li>Python</li>
+                    </a>
+
+                    <a href="">
+                        <li>HTML</li>
+                    </a>
+
+                    <a href="">
+                        <li>CSS</li>
+                    </a>
+
+                    <a href="">
+                        <li>JavaScript</li>
+                    </a>
+
+                    <a href="">
+                        <li>C Language</li>
+                    </a>
+
+                    <a href="">
+                        <li>C++</li>
+                    </a>
+                </ul>
+            </div>
+
+
+            <div class="manubarfooter">
+                <ul>
+                    <li style="color: white; font-weight: bold;">Company</li>
+                    <a href="about_us.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="Contact.html">
+                        <li>Contact Us</li>
+                    </a>
+                    <br><br><br><br>
+                    <br><br>
+                </ul>
+            </div>
+        </div>
+
+
+        <p style=" width: 92%; text-align: center; background-color: white; height: 1px; margin-left: 4%;"></p>
+        <div class="footerpowerdby">
+            <p>
+                &#169; 2022 Copyrights All Right Reserved Website Design By CodeHind</p>
+        </div>
+
+    </footer>
+    <a href="tools.html">
+        <div class="fixboxup">
+            <i class="bi bi-arrow-up"></i>
+        </div>
+    </a>
+</body>
+
+</html>

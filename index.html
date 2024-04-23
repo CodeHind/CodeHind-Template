@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description"
+        content="CodeHind is a E-Learning platform for all Students who wants to learn Computer Programming. Our Mission is to Provide Best Programming Education to All Programming Students with Simple and Easy Language. We Have Uploaded Some Programming Languages Course like Python, HTML, CSS, Javascript, PHP, C Language, C++, Ruby, Java and Other Programming Language.">
+
+    <meta name="Keywords"
+        content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+
+    <meta property="og:title" content="CodeHind An E-Learning Platform for All Programmers">
+
+    <meta property="og:description"
+        content="CodeHind offers free online tutorials, Materials, Coding Tools, Projects, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+
+    <meta name="author" content="CodeHind, Shani Kumar, Sumit Kumar">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="shortcut icon" href="images/CodeHind_Logos/CodeHind_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Home/style.css">
+    <link rel="stylesheet" href="css/Home/mobile_view_style.css">
+    <title>CodeHind | Home</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/CodeHind_Logos/CodeHind_Header_logo.png" alt="logo" width="100px"></a>
+        </div>
+        <!-- mobile View -->
+        <div class="nav nav-set-home nav-mobile-view" id="mySidenav">
+            <div class="list-btn-menu-cancel-mobile-view ">
+                <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            </div>
+            <ul>
+                <li><a href="index.html"
+                        style="background-color: #4e0296; padding: 5px; color: white; border-radius: 50px; padding: 3px 10px;">Home</a>
+                </li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="materials.html">Meterials</a></li>
+                <div class="search-box">
+                    <button class="btn-search"><i class="bi bi-search"></i></button>
+                    <input type="text" id="myInput" onkeyup="myFunction()" class="input-search"
+                        placeholder="Type to Search...">
+
+                    <ul id="myUL" class="search_function_home">
+                        <li><a href="Courses/Python/1_Python_Intro.html">Python</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">C Language</a></li>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="Projects/Python/1_mad_lib.html.html">Calculator</a></li>
+                        <li><a href="Tools/HTML Code Editor/code_editor.html">Code Editor</a></li>
+                        <li><a href="materials.html">programming Logic Buildig Ebook</a></li>
+                        <li><a href="materials.html">Books</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="list-btn-menu-mobile-view">
+            <span style="font-size:30px; cursor:pointer;" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- JS MENU BAR -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </div>
+
+    <!-- Javascript_code_search_bar -->
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <!--Slider -->
+    <div class="slider">
+        <div class="slider_text">
+            <p style="font-size: 25px; line-height: 25px; font-style: normal; margin-top: 60px;"></p>
+            <h1 class="slider_text_p"> Welcome To<br> The Coding World</h1>
+            <p class="slider_text_p2">Explore Your Learning Area And Gather Knowledge</p>
+            <p class="slider_text_baat_coding_ki">#Baat Coding Ki</p>
+            <a href="Course.html" class="button">Start Learning</a>
+            <div class="baatcodingki">
+                <p style="color: #6739b7; font-size: 20px; margin-left: -25px; padding: 0%;">#Baat Coding Ki</p>
+            </div>
+        </div>
+
+        <div class="course-search-bar-mobile">
+            <input type="search" placeholder="Search Courses"><a href="#"><i class="bi bi-search"></i></a>
+        </div>
+
+        <div class="backgrounimghome">
+            <img src="images/imgbackhome.png" alt="img" width="400px">
+        </div>
+    </div>
+    <br>
+    <div class="homecourses">
+        <div class="courseshader">
+            <h2 class="home-courses-haeding-css" id="startlearninghomepage">Start Learning<br> And Claim Your Success
+            </h2>
+            <p> The only way to learn a new programming language is by writing programs in it.</p>
+        </div><br><br>
+        <div class="coursesmain">
+            <div class="course1">
+                <img src="images/html-5-icon.png" alt="HTML" height="50px">
+                <h4>Learn HTML</h4>
+                <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be
+                    displayed in a web browser. </p>
+                <button disabled="disabled"><a href="">Coming Soon</a></button><br>
+            </div>
+            <div class="course1 course2">
+                <img src="images/python.png" alt="python" height="50px">
+                <h3>Python</h3>
+                <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code
+                    readability with the use of significant indentation.</p>
+                <button><a href="Courses/Python/1_Python_Intro.html"><b>Start Learning</b></a></button>
+            </div>
+
+            <div class="course1">
+                <img src="images/CSS3_logo.png" alt="CSS" height="50px">
+                <h4>Learn CSS</h4>
+                <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document
+                    written in a markup language such as HTML or XML.</p>
+                <button disabled="disabled"><a href="">Coming Soon</a></button><br>
+            </div>
+            <!-- 
+                <div class="coursebuttomtext">
+                    <h1>Get Cetificate by CodeHind</h1>
+                    <p>a certificate easily moves you at least thousand rows ahead of other job candidates, with similar
+                        knowledge.</p>
+                </div> -->
+        </div><br><br><br>
+    </div>
+    <div class="mobile-view-courses-slider">
+        <div class="box-learning-courses">
+            <br><br><br>
+            <img src="images/python.png" alt="Courses" width="120px">
+            <h2>Python</h2>
+            <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code
+                readability with the use of significant indentation. Python is dynamically-typed and garbage-collected.
+                It supports multiple programming paradigms, including structured, object-oriented and functional
+                programming.</p>
+            <a href="Courses/Python/1_Python_Intro.html"> <button class="button_home_page_read_more">Start
+                    Learning</button></a>
+            <br><br>
+        </div>
+
+        <div class="box-learning-courses" style="background-color: #f1e9ff;">
+            <br><br><br>
+            <img src="images/image_removebg_preview.png" alt="Courses" width="120px">
+            <h2>C++</h2>
+            <p>C++ is a general-purpose programming language created by Danish computer scientist Bjarne Stroustrup as
+                an extension of the C programming language, or "C with Classes".</p>
+            <a href="#"> <button class="button_home_page_read_more">Coming Soon</button></a>
+            <br><br><br>
+        </div>
+
+        <div class="box-learning-courses">
+            <br><br><br>
+            <img src="images/transparent_javascript_logo.png" alt="Courses" width="120px">
+            <h2>Javascript</h2>
+            <p>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the
+                World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side
+                for webpage behavior, often incorporating third-party libraries.</p>
+            <a href="#"> <button class="button_home_page_read_more">Coming Soon</button></a>
+            <br><br><br>
+        </div>
+    </div>
+    <div class="homefindingtools reveal" style="background-color: #f1e9ff;">
+        <div class="home-finding-tools-img">
+            <img src="images/mobile_view_home_page_images/tools_image.png" alt="coding tools Image" width="320px">
+        </div>
+        <div class="homefindtext reveal">
+            <p class="home-finding-coding-tools"><b>Are You Finding for <br>Coding Tools ?</b></p>
+            <p class="home-finding-coding-tools-p">Get All Coding Related <br>Tools to Become Professinol Developer</p>
+            <div class="homebuttonfind">
+                <a href="tools.html"><button type="submit" style="font-size: 16px; font-weight: bold;">Get All
+                        Tools</button></a>
+            </div>
+            <div class="home_button_find_mobile_view">
+                <a href="tools.html"><button type="submit">Get All Tools</button></a>
+            </div>
+        </div>
+        <div class="homefindimg reveal">
+            <img src="images/Home_Page/Are_You_finding_for_Codig_Tools.png" alt="image_find" width="270px">
+        </div>
+    </div>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+                else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+
+    <div class="why_codehind">
+        <h1>Why CodeHind?</h1>
+        <div class="why_codehind_reason">
+
+            <div class="why_codehind_reason1">
+                <h2>Visualize Programming</h2>
+                <p>We focus on Visualizing Programming Concepts. Therefore Students can Visualize all Concepts. We Use
+                    Very Simple Language for Student Understanding. </p>
+            </div>
+
+            <div class="why_codehind_reason1">
+                <h2>Best Coding Environment</h2>
+                <p>We Created Complete Programming Environment. Like Students can Practice Here from our Tools, and we
+                    have given many Projects and Materials</p>
+            </div>
+
+            <div class="why_codehind_reason1">
+                <h2>Full Hand Hold Support</h2>
+                <p>
+                    CodeHind Provide Full Hand Hold Support to Students or Learners. If any students has any query or
+                    Problem then they can share their Problem with us.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviewhomebox ">
+        <div class="reviwetext">
+            <h1>Our Student Review</h1>
+        </div>
+        <div class="userreviewbox reveal">
+
+            <div class="user_review_img_box">
+                <img src="images/mobile_view_home_page_images/prashant_image.png" alt="User Review"
+                    class="user_review_box_img">
+            </div>
+            <div class="user_review_box_text">
+                <div class="userreviewname">
+                    <h3>Prashant</h3>
+                </div>
+                <div class="userreviewtext">
+                    <p>CodeHind is the best Platform to learn programming. here you will learn all Programming Concepts.
+                        The Teachers of CodeHind are very
+                        punctual in their work,They teaches us so many
+                        good things.</p>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br><br>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="userreviewbox reveal">
+            <div class="user_review_img_box">
+                <img src="images/mobile_view_home_page_images/ankit_review.png" alt="User Review"
+                    class="user_review_box_img">
+            </div>
+            <div class="user_review_box_text">
+                <div class="userreviewname">
+                    <h3>Ankit</h3>
+                </div>
+                <div class="userreviewtext">
+                    <p>CodeHind is very best academy for Programming or Coding. This is very amazing Website I am
+                        learning programming from CodeHind and I am able to Understand All Programming Concepts in Very
+                        Easy Way.</p>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br><br>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="userreviewbox reveal">
+            <div class="user_review_img_box">
+                <img src="images/mobile_view_home_page_images/mangesh_review.png" alt="User Review"
+                    class="user_review_box_img">
+            </div>
+            <div class="user_review_box_text">
+                <div class="userreviewname">
+                    <h3>Mangesh </h3>
+                </div>
+                <div class="userreviewtext">
+                    <p>
+                        Best Programming Site Ever. CodeHind Provide us Best Knowledge of Programming and Other
+                        technologies which can really Help Us to Improve Our Knowledge. This Website Can be a Heart of
+                        Every Programmer
+                    </p>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brandpartenerstext">
+        <h1>Brands we are associated with</h1>
+    </div>
+
+    <div class="brandpartenerslogo">
+        <img src="images/barnd parteners.png" alt="google" height="auto" class="xyz">
+    </div>
+    <br><br><br><br><br>
+
+    <div class="baatcodingkihome">
+        <p>#Baat Coding Ki</p>
+    </div>
+
+    <!-- footer- -->
+    <footer>
+        <br><br>
+        <div class="homefooter">
+            <div class="footerimglogo">
+                <img src="images/CodeHind_Logos/CodeHind_Footer_Logo.png" alt="Logo" height="60px">
+            </div>
+            <div class="inputsubscribe">
+                <form action="https://formspree.io/f/mwkzrywg" method="post" target="_blank">
+                    <input type="email" name="Email" placeholder="Email Enter" class="inputsubscribeemail">
+                    <input type="submit" name="Subscribe" value="Subscribe" class="inputsubscribesubmit">
+                </form>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/codehind/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/people/CodeHind/100086582449717/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCgQS0PMpqfoPLzVDK7_-Naw" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="#"  target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="t.me/codehind" target="_blank"><i class="bi bi-telegram"></i></a>
+            </div>
+        </div>
+        <div class="contect_about_home_page">
+            <ol>
+                <li><a href="about_us.html"> About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ol>
+        </div>
+        <div class="manubarfooter_big">
+            <div class="manubarfooter">
+                <ul>
+                    <li style="color: white; font-weight: bold;">Manu</li>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="Course.html">
+                        <li>Courses</li>
+                    </a>
+                    <a href="tools.html">
+                        <li>Tools</li>
+                    </a>
+                    <a href="projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a href="materials.html">
+                        <li>Materials</li>
+                    </a><br>
+                </ul>
+            </div>
+            <div class="manubarfooter">
+                <ul>
+                    <li style="color: white; font-weight: bold;">Tutorials</li>
+                    <a href="Courses/Python/1_Python_Intro.html">
+                        <li>Python</li>
+                    </a>
+
+                    <a href="">
+                        <li>HTML</li>
+                    </a>
+
+                    <a href="">
+                        <li>CSS</li>
+                    </a>
+
+                    <a href="">
+                        <li>JavaScript</li>
+                    </a>
+
+                    <a href="">
+                        <li>C Language</li>
+                    </a>
+
+                    <a href="">
+                        <li>C++</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="manubarfooter">
+                <ul>
+                    <li style="color: white; font-weight: bold;">Company</li>
+                    <a href="about_us.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="Contact.html">
+                        <li>Contact Us</li>
+                    </a>
+                    <br><br><br><br>
+                    <br><br>
+                </ul>
+            </div>
+        </div>
+
+        <p style=" width: 92%; text-align: center; background-color: white; height: 1px; margin-left: 4%;"></p>
+        <div class="footerpowerdby">
+            <p>
+                &#169; 2022 Copyrights All Right Reserved Website Design By CodeHind</p>
+        </div>
+
+    </footer>
+    <a href="index.html">
+        <div class="fixboxup">
+            <i class="bi bi-arrow-up"></i>
+        </div>
+    </a>
+</body>
+
+</html>
