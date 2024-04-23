@@ -1,0 +1,147 @@
+body{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+/*------------ Header -----------------*/
+.menu{
+    margin-top: 20px;
+    margin-right: 30px;
+    display: inline-block;
+    margin-left: 640px;
+    position: sticky;
+}
+
+.menu ul li{
+    float: left;
+    list-style-type: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;  
+}
+
+.menu ul i{
+    background-color: #6739B7;
+    border-radius: 50px;
+    padding: 7px;
+    color: white;   
+}
+
+/* ------------ Course Name -------------- */
+
+.main-menu{
+    display: inline-block;
+    margin-left: 45px;
+    background-color: #6739B7;
+    border-radius: 7px;
+    top:65px;
+    width: 94%;
+    position: sticky;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.main-menu ul li{
+    float: left;
+    margin-top: -15px;
+    list-style-type: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main-menu ul a{
+    text-decoration: none;
+    color: white;  
+}
+
+.code_editor{
+float: right;
+}
+
+
+
+.main-menu ul a li:hover{
+    background-color: #4e1ca3;
+    color: white;
+}
+
+/* -------------- Side Bar ------------- */
+
+.big-container{
+    margin-left: 45px;
+    display: inline-block;
+    width: 94%;
+}
+
+.side-bar{
+    width: 15%;
+    background-color: #6739B7;
+    margin-top: 15px;
+    position: fixed;
+    border: 5px #000000;
+    border-radius: 10px;
+    overflow-y:scroll;
+}
+
+.side-bar ul a{
+    text-decoration: none;
+   
+}
+
+.side-bar ul a li{
+    list-style-type: none;
+    color: white;
+    padding: 8px;
+}
+
+.side-bar ul{height:470px; width:15%;}
+
+/* ------------- Content ----------------- */
+
+.content{
+    width: 59%;
+    margin-left: 17%;
+    border: 1px solid rgb(167, 167, 167);
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: none;
+    border-bottom: none;
+    float: left;
+}
+
+.content p{
+    line-height: 20px;
+}
+
+.big-container .content .para img{
+    width: 750px;
+}
+
+/* -------------- Advertisement ------------*/
+
+.advertisement{
+    width: 19%;
+    float: right;
+    margin-right: -15px;
+}
+
+.advertisement img{
+    width: 200px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.advertisement p{
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 20px;
+}

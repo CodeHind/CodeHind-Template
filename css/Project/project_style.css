@@ -1,1 +1,104 @@
+body {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+    background-color: #ffffff;
+}
 
+.backgrounimghomeproject img{
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 2;
+    animation-name: coursesanimationslider;
+    animation-duration: 1s;
+}
+
+.slider .slider_text .slider_text_projects_h1{
+    padding-top: 10px; 
+    line-height: 65px; 
+    font-size: 50px; 
+    margin-top: 60px;
+}
+
+.slider .backgrounimghomeproject .backgroundimgprojects{
+    width: 450px;
+    margin-top: -20px;
+    padding-right: 70px;
+}
+@keyframes coursesanimationslider{
+    0%{top: 0%; bottom: -200px;}
+    100%{top: 0%; bottom: 0px;}
+}
+
+.ourproject{
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.coursespageprojects{
+    background-color: #f1e9ff;
+    margin-top: -40px;
+
+}
+
+.coursespageprojects1{
+    background-color: white;
+}
+
+.coursespageprojects .projectbox{
+    padding: 50px 20px 20px 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    margin: -120px 50px 200px 50px;
+    box-shadow: 0px 0px 25px #d4d4d4;
+    width: 240px;
+    min-height: 280px;
+    max-height: 280px;
+    height: 280px;
+    cursor: pointer;
+}
+
+.coursespageprojects .projectbox p{
+    padding: 0px 30px;
+}
+
+.projectbox:hover{
+    background-color: #6739b7;
+    color: white;
+    transition: 1s;
+}
+
+.projectbox button:hover{
+    background-color: white;
+    color: #232025;
+    transition: 1s;
+}
+
+.projectbox button{
+    padding: 7px 20px; 
+    background-color: #232025;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.projectbox button a:hover{
+    color: #232025;
+}
+
+.projectbox button a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+}
+
+footer{
+    font-size: 20px;
+}
