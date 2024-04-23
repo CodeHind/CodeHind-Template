@@ -21,9 +21,9 @@ If you have any feedback, please reach out to us at officialcodehind@gmail.com
 
 ## FAQ
 
-#### Question 1 What is CodeHind?
+#### Question 1: What is CodeHind?
 
-Answer 1 CodeHind is a website that teaches the progamming languages and more!.
+Answer 1: CodeHind is a website that teaches the progamming languages and more!.
 
 #### Question 2
 
