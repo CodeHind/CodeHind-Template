@@ -1,0 +1,412 @@
+@media screen and (max-width: 480px) {
+    body{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .logo {
+        margin-left: -35px;
+    }
+
+    /* list botton mobile view */
+    .list-btn-menu-mobile-view {
+        float: right;
+        font-size: 35px;
+        margin: 5px;
+        visibility: visible;
+        position: relative;
+    }
+
+    .list-btn-menu-mobile-view a {
+        text-decoration: none;
+        color: black;
+        transition: 0.6s;
+    }
+
+    .navbar .list-btn-menu-mobile-view a:hover {
+        background-color: white;
+    }
+
+    .nav .list-btn-menu-cancel-mobile-view {
+        float: right;
+        margin: -40px 15px 0px 0px;
+        font-size: 55px;
+        padding: 10px;
+        visibility: visible;
+        position: relative;
+    }
+
+    .nav-mobile-view .list-btn-menu-cancel-mobile-view a {
+        text-decoration: none;
+        color: #aaa8a8f1;
+    }
+
+    .search-box {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    /* .nav-mobile-view side bar */
+
+    .nav-mobile-view {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #6739b7 ;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .nav-mobile-view ul {
+        list-style-type: none;
+    }
+
+    .nav-mobile-view ul li {
+        padding: 15px 100px;
+        display: block;
+        margin-left: -15%;
+    }
+
+    .nav-mobile-view ul li a {
+        text-decoration: none;
+        background-color: #6739b7;
+        color: white;
+        padding: 5px 10px;
+    }
+
+    /* slider */
+    .slider {
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+        text-align: center;
+    }
+
+    .slider .button {
+        visibility: hidden;
+    }
+
+    .slider .slider_text {
+        text-align: center;
+    }
+
+    .slider .slider_text .slider_text_p {
+        font-size: 35px;
+        line-height: 35px;
+        margin: 5px 5px 0px 38px;
+    }
+
+    .slider .slider_text p {
+        visibility: hidden;
+    }
+
+    .backgrounimghome img {
+        margin-top: 35px;
+        width: 306px;
+    }
+
+    .slider .slider_text .baatcodingki p {
+        visibility: visible;
+        font-weight: bold;
+        text-align: center;
+        margin-top: -100px;
+        
+    }
+
+    .slider .slider_text .baatcodingki {
+        margin: 0% 20%;
+    }
+
+    /* search Botton */
+    .slider .course-search-bar-mobile {
+        visibility: visible;
+        text-align: center;
+    }
+    
+
+    .slider .course-search-bar-mobile input {
+        border: none;
+        outline: none;
+        border-radius: 50px 0px 0px 50px;
+        width: 70%;
+        font-size: 18px;
+        height: 50px;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .slider .course-search-bar-mobile input:active{
+        outline: none;
+        border: none;
+    }
+
+    .slider .course-search-bar-mobile i {
+        font-size: 20px;
+        padding: 17px 14px 14.5px 14px;
+        height: 50px;
+        color: white;
+        border-radius: 0px 50px 50px 0px;
+        background-color: #6739b7;
+    }
+
+    .homecourses .courseshader{
+        visibility: hidden;
+        overflow: hidden;
+        position: absolute;
+        margin-top: 55px;
+    }
+
+    .home-courses-haeding-css  {
+        font-size: 20PX;
+    }
+
+    .coursesmain {
+        visibility: hidden;
+        position: absolute;
+    }
+
+
+    /* .coursesmain .course1{
+        width: 70%;          
+    }
+
+    .coursesmain .course1 p{
+        visibility: hidden;
+    }
+
+    .coursesmain .course1 button{
+        margin-top: -100px;
+    } */
+
+    
+
+    .mobile-view-courses-slider {
+        position: relative;
+        visibility: visible;
+        padding: 0%;
+        margin: 0%;
+        margin-top: -100px;
+        text-align: center;
+    }
+
+    .mobile-view-courses-slider .box-learning-courses {
+        background-color: white;
+        display: block;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        margin-bottom: 30px;
+    }
+
+    .mobile-view-courses-slider .box-learning-courses p{
+        text-align: center;
+        padding: 30px;
+        line-height: 20px;
+    }
+
+    .mobile-view-courses-slider .box-learning-courses a .button_home_page_read_more{
+        width: 200px;
+        border-radius: 50px;
+        border: none;
+        background-color: #6739b7;
+        color: #ffffff;
+        padding: 10px 30px 10px 30px;
+        font-size: 20px;
+    }
+
+    /* Animated Image Box */
+    .homefindingtools {
+        height: 720px;
+        padding-top: 20px;
+    }
+
+    .homefindingtools .home-finding-tools-img {
+        text-align: center;
+        visibility: visible;
+        position: relative;
+        margin: 35px -3%;
+
+    }
+
+    .homefindingtools .homefindtext .home-finding-coding-tools {
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        width: max-content;
+        margin: 0px 0px 0px -15%;
+    }
+
+    .homefindingtools .homefindimg {
+        visibility: hidden;
+    }
+
+    .homefindingtools .home-finding-coding-tools-p {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: -25%;
+        height: max-content;
+    }
+
+    .homefindingtools .homebuttonfind button {
+        visibility: hidden;
+        position: absolute;
+    }
+
+
+    .homefindingtools .home-finding-tools-img img {
+        text-align: center;
+        margin-bottom: -50px;
+    }
+
+    .homefindingtools .home_button_find_mobile_view {
+        visibility: visible;
+        position: relative;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: -30%;
+        
+    }
+
+
+    .homefindingtools .home_button_find_mobile_view button {
+        padding: 10px 15px 10px 15px;
+        border: none;
+        background-color: #6739b7;
+        color: white;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    /* -------------------Why Codehind------------------ */
+    .why_codehind{
+        background-color: #ffffff;
+        text-align: center;
+        width: 100%;
+        margin-top: -20px;
+        margin-bottom: 60px;
+    }
+
+    .why_codehind h1{
+        font-size: 40px;
+    }
+    
+    
+    .why_codehind .why_codehind_reason{
+    width: 100%;
+    }
+
+    .why_codehind .why_codehind_reason .why_codehind_reason1{
+        width: 80%;
+        position: relative;
+        height: 200px;
+        margin: 20px;
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 5px; 
+    }
+
+
+    .why_codehind .why_codehind_reason .why_codehind_reason1 p{
+        line-height: 28px;
+        font-size: 20px;
+        
+    }
+
+
+
+    /* Our review */
+    .reviewhomebox {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+
+    .reviewhomebox .userreviewbox {
+        margin-bottom: 35px;
+    }
+
+
+    /* Our brand */
+    .brandpartenerstext {
+        font-size: 13px;
+    }
+
+    .xyz {
+        width: 100%;
+    }
+
+
+    /* Baat Coding ki */
+    .baatcodingkihome {
+        font-size: 20px;
+        margin-bottom: -45px;
+    }
+
+    /* Footer Work  */
+    footer {
+        border-radius: 35px 0px 0px 0px;
+        height: 440px;
+        position: absolute;
+    }
+
+    .homefooter {
+        text-align: center;
+        width: 100%;
+    }
+
+    .homefooter .footerimglogo {
+        margin: -20px 50px 30px 0px;
+    }
+
+    /* subscribe Now Button */
+    .homefooter .inputsubscribe .inputsubscribeemail {
+        background-color: white;
+        color: black;
+        width: 160px;
+    }
+
+    footer .manubarfooter_big {
+        visibility: hidden;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    footer .homefooter .socialmedia {
+        text-align: center;
+        margin-left: 6%;
+    }
+
+    footer .contect_about_home_page ol li {
+        visibility: visible;
+        font-weight: bold;
+        display: inline;
+        text-align: center;
+        list-style-type: none;
+        margin-left: 15%;
+    }
+
+    footer .contect_about_home_page ol li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .footerpowerdby p{
+        font-size: 13px;
+    }
+
+    .fixboxup{
+        padding: 13px 15px;
+        font-size: 20px;
+    }
+
+}
