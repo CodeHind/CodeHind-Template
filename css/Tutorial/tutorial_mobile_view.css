@@ -1,0 +1,92 @@
+@media screen and (max-width: 480px) {
+
+    body {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .main-menu {
+        width: 100%;
+        margin: 5% 0%;
+        visibility: hidden;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .content .para .para_image_python_intro {
+        width: 95%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .big-container {
+        margin: 0%;
+        padding: 0%;
+        width: 98%;
+    }
+
+
+    
+    .side-bar {
+        width: 100%;
+        margin: 0%;
+        padding: 1%;
+        top: 73px;
+        position: sticky;
+        border-radius: 0%;
+    }
+
+    /* Mobile Viwe Change widht */
+    .side-bar ul p{
+        display: none;
+    }
+    .side-bar ul  {
+        height: auto;
+        width: 1360px;
+        padding: 15px;
+        overflow-x: scroll;
+        margin: 0%;
+    }
+
+    .side-bar ul a li{
+        padding: 20px;
+        margin: 0%;
+        display: inline;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0%;
+        padding: 1%;
+        border: none;
+    }
+
+    .content .title h1 {
+        padding: 6% 0% 0% 8%;
+        margin: 0%;
+    }
+
+    .content .para {
+        margin: 0%;
+        padding: 10px;
+    }
+
+    /* Get Started Page Css */
+    .content .para .image_get_start{
+        width: 350px;
+        margin: 0%;
+        padding: 0%;
+    }
+
+
+    .advertisement {
+        visibility: hidden;
+        overflow: hidden;
+        position: absolute;
+        margin: 0%;
+        padding: 0%;
+    }
+
+
+}
