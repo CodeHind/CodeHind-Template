@@ -1,1 +1,130 @@
+body{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.slider{
+    margin: 0%;
+    padding: 0%;
+}
+
+.slider_text_course_h1{
+    font-size: 65px;
+    padding-top: 10px; 
+    line-height: 75px;  
+    margin-top: 50px;
+}
+
+
+.slider .backgrounimgcourses .backgrounimgcourses_img{
+    float: right;
+    width: 500px;
+    margin-top: 50px;
+    text-align: center;
+    margin-right: 50px;
+    position: relative;
+    z-index: 2;
+    animation-name: coursesanimationslider;
+    animation-duration: 1s;
+}
+
+@keyframes coursesanimationslider{
+    0%{top: 0%; bottom: -200px;}
+    100%{top: 0%; bottom: 0px;}
+}
+
+
+
+.course-search-bar{
+    background-color: #671dc9;
+    width: 80%;
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+    padding: 3px 0px 1px 6px;  
+    margin-left: 10%;
+    margin-top: -25px;
+    box-shadow: 0px 5px 20px #a7a2a2;
+}
+
+
+.course-search-bar input{
+    border-radius: 8px;
+    border: none;
+    width: 95%;
+    padding: 15px;
+    font-size: 20px;
+}
+.course-search-bar i{
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.courseshader{
+    text-align: center;
+}
+
+.our_courses_css{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+.coursespage{
+    width: 100%;
+    height: 400px;
+}
+
+.coursespage .coursecourse{
+    padding: 50px 20px 20px 20px;
+    background-color: #f1e9ff;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px 50px;
+    width: 240px;
+    min-height: 280px;
+    max-height: 280px;
+    height: 280px;
+    cursor: pointer;
+}
+
+.coursespage .coursecourse p{
+    padding: 0 24px;
+}
+
+.coursecourse:hover{
+    background-color: #6739b7;
+    color: white;
+    transition: 1s;
+}
+
+.coursespage .coursecourse button:hover{
+    background-color: white;
+    color: #232025;
+    transition: 1s;
+}
+
+.coursespage .coursecourse button{
+    padding: 7px 20px; 
+    background-color: #232025;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+.coursespage .coursecourse button a:hover{
+    color: #232025;
+}
+
+.coursespage .coursecourse button a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+}
 

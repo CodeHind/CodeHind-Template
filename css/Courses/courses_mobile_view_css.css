@@ -1,0 +1,68 @@
+@media screen and (max-width: 480px) {
+    body{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;       
+    }
+
+    .slider{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .slider .slider_text .slider_text_course_h1{
+        line-height: 45px;
+        font-size: 30px;
+        margin: 0% 12%;
+    }
+
+    
+    .slider .slider_text button {
+        visibility: hidden;
+    }
+
+    .slider .slider_text .course-search-bar-mobile{
+        text-align: center;
+        width: 80%;
+        margin: 0% auto;
+        margin-left: -6%;
+    }
+
+    .slider .backgrounimgcourses .backgrounimgcourses_img{
+        width: 380px;
+        margin-right: 5px;
+        margin-bottom: -20px;
+    }
+
+    .course-search-bar{
+        visibility: hidden;
+    }
+
+    .our_courses_css h1{
+        margin-top: -8%;
+        margin-bottom: 12%;
+    }
+
+
+    /* --------courses Section------- */
+    .homecourses{
+        margin: 0%;
+        padding: 0%;
+        height: 2300px;
+        display: block;
+    }
+
+    .coursecourse{
+        height: auto;
+    }
+    .coursespage{
+        display: block;
+        height: max-content;
+        margin-bottom: -50px;
+    }
+
+    /* --------------------Footer Work---------------------- */
+    .baatcodingkicourses {
+        margin-top: 30px;
+    }
+}
