@@ -26,8 +26,8 @@ If you have any feedback, please reach out to us at codehindofficial@gmail.com
 
 Answer 1: CodeHind is a website that teaches the progamming languages and more!.
 
-#### Question 2
+#### Question 2: what services codehind provide?
 
-Answer 2
+Answer 2: CodeHind helps to acknowledge you! We provide services like website development,digital marketing, online advertisement, and much more. YOU CAN VISIT OUT SITE TO KEARN PROGRAMMING LANGUAGES ALSO www.codehind.com
 
 
