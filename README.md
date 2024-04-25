@@ -17,7 +17,7 @@ This Git repository provides a comprehensive template for building a code hind w
 
 ## Feedback
 
-If you have any feedback, please reach out to us at officialcodehind@gmail.com
+If you have any feedback, please reach out to us at codehindofficial@gmail.com
 
 
 ## FAQ
